@@ -12,7 +12,7 @@
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="servicio.css">
 </head>
 <body>
     <div class="container">
@@ -62,15 +62,39 @@
 
     </div>
     
-    <div id="page-title">
-        <h1>
-        Sorrento
-        </h1>
+    <div class="card service-card">
+        <img src="resources/papers.jpg" class="card-img-top" alt="Traducciones">
+        
+        <div class="card-body">
+            <h5 class="card-title">Fast It</h5>
+            <p class="card-text">Sitio Oficial del Consulado</p>
+            <p class="price">ARS 45 000</p>
+        
+            <div class="quantity-controls">
+                <button class="btn btn-sm btn-outline-secondary" onclick="adjustQty(this, -1)">−</button>
+                <span class="quantity">0</span>
+                <button class="btn btn-sm btn-outline-secondary" onclick="adjustQty(this, 1)">+</button>
+            </div>
+        </div>
     </div>
 
-    <h2>Inscripciones</h2>
-    
+    <div class="card service-card">
+        <img src="resources/papers.jpg" class="card-img-top" alt="Traducciones">
+        
+        <div class="card-body">
+            <h5 class="card-title">Prenotami</h5>
+            <p class="card-text">Para solicitud de pasaportes.</p>
+            <p class="price">ARS 25 000</p>
+        
+            <div class="quantity-controls">
+                <button class="btn btn-sm btn-outline-secondary" onclick="adjustQty(this, -1)">−</button>
+                <span class="quantity">0</span>
+                <button class="btn btn-sm btn-outline-secondary" onclick="adjustQty(this, 1)">+</button>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
