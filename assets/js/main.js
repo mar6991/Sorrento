@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 function logout() {
-    localStorage.removeItem("loggedIn");
+    sessionStorage.removeItem("loggedIn");
     window.location.href = "logIn.html";
 }
 
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", createNavbar);
 //agregar el carrito en el session storage
 
 function addToCart(servicioId, titulo, precio){
-    let cart =JSON.parse(localStorage.getItem("carrt")) || [];
+    let cart =JSON.parse(localStorage.getItem("cart")) || [];
 
     const existingItem = cart.find(item => item.id === servicioId);
 
